@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Генератор паролей</title>
+</head>
+<body>
+    <div class="container">     
+        <div class="title">
+            <h1>Генератор паролей</h1>
+        </div>
+        <label for="passwordLength">Длина пароля:</label>
+        <input type="number" id="passwordLength" min="1" value="8"><br> 
+        <div class="item__box">
+            <div class="item">
+                <input class="checkbox" type="checkbox" id="excludeUppercase">
+                <label for="excludeUppercase">Исключить заглавные символы</label>
+            </div>
+            <div class="item">
+                <input class="checkbox" type="checkbox" id="digitsOnly">
+                <label for="digitsOnly">Только цифры</label>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="generateButton">Сгенерировать пароль</button>
+            <button id="copyButton">Скопировать пароль</button>
+        </div>
+        <div id="passwordDisplay"></div> 
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
